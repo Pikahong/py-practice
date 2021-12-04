@@ -24,7 +24,4 @@ df = pd.DataFrame(data, columns=title)
 df['Country/Territory'].fillna(method='ffill', inplace=True)
 df.to_csv('List_of_national_capitals.csv', index=False)
 
-
-match = df[title[0]].str.match('')
-df = df[match]
 print(df)
